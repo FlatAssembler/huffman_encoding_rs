@@ -20,7 +20,7 @@ impl Settings {
         while let Some(arg) = args.next() {
             match arg.as_str() {
                 "-o" => {
-                    let output_file = args.next().expect("Cant have -o followed by nothin");
+                    let output_file = args.next().expect("Cant have -o followed by nothing!");
                     if output.is_some() {
                         panic!("Cant have multiple output files");
                     }
